@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %}
+<body>
+    {% block content %}
+    <div id="mindful_1">
+        <h1 class="mindful_1_head">Feed the inner you with these calming exercises!!</h1>
+        <p class="mindful_1_content">Scroll down to learn more!!</p>
+    </div>
+    <div class="yoga_row1">
+        <div class="padmasana">
+            <h2 style="text-align:center">Padmasana</h2>
+            <img class="pic1" src="{% static 'images/mindfulness.jpg' %}">
+            <div style="text-align:center">
+                <button>Learn Now</button>
+            </div>    
+        </div>
+        <div class="pranayama">
+            <h2 style="text-align:center">Pranayama</h2>
+            <img class="pic2" src="{% static 'images/pranayama.jpeg' %}">
+            <div style="text-align:center">
+                <button>Learn Now</button>
+            </div>
+        </div>
+        <div class="vajrasana">
+            <h2 style="text-align:center">Vajrasana</h2>
+            <img class="pic3" src="{% static 'images/vajrasana.jpeg' %}">
+            <div style="text-align:center">
+                <button>Learn Now</button>
+            </div>
+        </div>
+    </div>
+    <div class="yoga_row2">
+        <div class="Butterflypose">
+            <h2 style="text-align:center">Butterfly pose</h2>
+            <img class="butterfly" src="{% static 'images/butterflypose.jpeg' %}">
+            <div style="text-align:center">
+                <button>Learn Now</button>
+            </div>
+        </div>
+        <div class="Cobrapose">
+            <h2 style="text-align:center">Cobra pose</h2>
+            <img class="cobra" src="{% static 'images/cobrapose.jpeg' %}">
+            <div style="text-align:center">
+                <button>Learn Now</button>
+            </div>
+        </div>
+        <div class="childpose">
+            <h2 style="text-align:center">Child's pose</h2>
+            <img class="child" src="{% static 'images/childpose.jpeg' %}">
+            <div style="text-align:center">
+                <button>Learn Now</button>
+            </div>
+        </div>
+    </div>
+    <div class="text_container">
+        <p style="padding-left:10px">As a beginner,follow these exercises as per the guidance provided. These exercises are well known to reduce stress, stretch vital body muscles and revitalize your lost strength.</p>
+        <h2 style="text-align:center">Remember, consistency is the key..understood kids hehehe!!!</h2>
+    </div>
+    {% endblock %}
+</body>
+</html>

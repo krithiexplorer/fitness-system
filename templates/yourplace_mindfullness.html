@@ -1,56 +1,31 @@
 {% extends 'base.html' %}
 {% load static %}
+{% static "images" as baseUrl %}
 <body>
     {% block content %}
-    <div id="mindful_1">
-        <h1 class="mindful_1_head">Feed the inner you with these calming exercises!!</h1>
-        <p class="mindful_1_content">Scroll down to learn more!!</p>
+    <div id="mindful_1" class="vh-100 d-flex flex-column">
+        <h1 class="mindful_1_head"><strong>Feed the inner you with these calming exercises!!</strong></h1>
     </div>
-    <div class="yoga_row1">
-        <div class="padmasana">
-            <h2 style="text-align:center">Padmasana</h2>
-            <img class="pic1" src="{% static 'images/mindfulness.jpg' %}">
-            <div style="text-align:center">
-                <button>Learn Now</button>
-            </div>    
-        </div>
-        <div class="pranayama">
-            <h2 style="text-align:center">Pranayama</h2>
-            <img class="pic2" src="{% static 'images/pranayama.jpeg' %}">
-            <div style="text-align:center">
-                <button>Learn Now</button>
-            </div>
-        </div>
-        <div class="vajrasana">
-            <h2 style="text-align:center">Vajrasana</h2>
-            <img class="pic3" src="{% static 'images/vajrasana.jpeg' %}">
-            <div style="text-align:center">
-                <button>Learn Now</button>
-            </div>
-        </div>
+    <div style="padding:100px;text-align:center;">
+        <h2>Scroll down to learn several poses</h2>
     </div>
-    <div class="yoga_row2">
-        <div class="Butterflypose">
-            <h2 style="text-align:center">Butterfly pose</h2>
-            <img class="butterfly" src="{% static 'images/butterflypose.jpeg' %}">
-            <div style="text-align:center">
-                <button>Learn Now</button>
+    <div class="d-flex">
+        {% for dest in dests %}
+
+        <div class='card_modify shadow col-xs-12 col-sm-6 col-md-4 text-center'>
+            <div class=' mt-4 m-2 p-2 pb-5 w-70 text-black'>
+                <h3 class='text-black'> Padmasana </h3>
+                <img class="img1" src="{{baseUrl}}/{{dest.jpg}}" alt="imagedisplayed">
+            </div>
+            <div style="padding:10px;">
+                <a href='details.html'>   
+                    <button class='btn btn-primary text-white mt-2'>View More</button>
+                </a>    
+            </div>
             </div>
         </div>
-        <div class="Cobrapose">
-            <h2 style="text-align:center">Cobra pose</h2>
-            <img class="cobra" src="{% static 'images/cobrapose.jpeg' %}">
-            <div style="text-align:center">
-                <button>Learn Now</button>
-            </div>
-        </div>
-        <div class="childpose">
-            <h2 style="text-align:center">Child's pose</h2>
-            <img class="child" src="{% static 'images/childpose.jpeg' %}">
-            <div style="text-align:center">
-                <button>Learn Now</button>
-            </div>
-        </div>
+
+        {% endfor %}
     </div>
     <div class="text_container">
         <p style="padding-left:10px">As a beginner,follow these exercises as per the guidance provided. These exercises are well known to reduce stress, stretch vital body muscles and revitalize your lost strength.</p>

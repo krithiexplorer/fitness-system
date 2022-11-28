@@ -16,96 +16,14 @@
     width:30%;
     align-items: center;
 }
-.login
-{
-    background-color: goldenrod;
-    color:#222;
-    width:100px;
-    text-align: center;
-    animation-name: login_anim;
-    animation-duration: 10s;
-}
-@keyframes login_anim
-{
-    from {background-color: goldenrod;}
-    to {background-color: rgb(111, 120, 197);}
-}
-.signup
-{
-    background-color: goldenrod;
-    color:#222;
-    width:100px;
-    text-align: center;
-}
-#login_signup
-{
-    position:absolute;
-    top:50px;
-    right:50px;
-}
 p{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color:rgb(240,174,21);
-    font-size: 15px;
 }
-.container2
+h6
 {
-    display:flex;
-    width:100%;
-    background-color: rgb(241,173,22);
-    height:20px;
-    justify-content: space-evenly;
-    padding:5px;
-    
+    color:rgb(240,174,21);
 }
-#b1
-{
-    padding:2px 4px 2px 4px;
-    text-align: center;
-    color:black;
-    background-color: rgb(240,174,21);
-    border:none;
-}
-#b2
-{
-    padding:2px 4px 2px 4px;
-    text-align: center;
-    color:black;
-    background-color: rgb(240,174,21);
-    border:none;
-}
-#b3
-{
-    padding:2px 4px 2px 4px;
-    text-align: center;
-    color:black;
-    background-color: rgb(240,174,21);
-    border:none;
-}
-#b4
-{
-    padding:2px 4px 2px 4px;
-    text-align: center;
-    color:black;
-    background-color: rgb(240,174,21);
-    border:none;
-}
-#b5
-{
-    padding:2px 4px 2px 4px;
-    text-align: center;
-    color:black;
-    background-color: rgb(240,174,21);
-    border:none;
-}
-#b6
-{
-    padding:2px 4px 2px 4px;
-    text-align: center;
-    color:black;
-    background-color: rgb(240,174,21);
-    border:none;
-}
+
 .container3
 {
     display:flex;
@@ -171,10 +89,11 @@ p{
     font-family: cursive;
     color:darkblue;
     font-size: 20px;
+    padding: 50px;
 }
 #mindful_1
 {
-    background-image: url("https://imgs.search.brave.com/hnOBf_vRaDGX8dC9FlZTx_RiYDFPufhKwT_PxoLhiE0/rs:fit:1200:1080:1/g:ce/aHR0cHM6Ly93d3cu/cGl4ZWxzdGFsay5u/ZXQvd3AtY29udGVu/dC91cGxvYWRzLzIw/MTYvMDYvSGFwcHkt/ZGF5LXdhbGxwYXBl/ci0xOTIweDEwODAu/anBn");
+    background-image: url("https://www.kayawell.com/blog/wp-content/uploads/2019/04/Tips-To-Maintain-Health-Fitness-Goals-in-Your-Busy-Life.png");
     background-position: cover;
     background-repeat: no-repeat;
     background-size:1400px 1000px;
@@ -183,159 +102,8 @@ p{
     width:100%;
 
 }
-.mindful_1_head
-{
-    color:black;
-}
-.mindful_1_content
-{
-    color:#222;
-}
 .content{
     color:gold;
     font-size: 40px;
     font-family: 'Times New Roman', Times, serif;
-}
-.yoga_row1
-{
-    display:flex;
-    height:600px;
-}
-button
-{
-    color:white;
-    background-color: green;
-    border-radius: 5px;
-    padding:5px;
-}
-.padmasana
-{
-    display:block;
-    padding:2%;
-}
-.pic1
-{
-    border-radius: 5px;
-    width:100%;
-    height:400px;
-}
-.pranayama
-{
-    display:block;
-    padding:2%;
-}
-.pic2
-{
-    border-radius: 5px;
-    width:100%;
-    height:400px;
-}
-.vajrasana
-{
-    display:block;
-    padding: 2%;
-}
-.pic3
-{
-    border-radius: 5px;
-    width:100%;
-    height:400px;
-}
-.yoga_row2
-{
-    display:flex;
-    height:600px;
-}
-.Butterflypose
-{
-    display:block;
-    padding:2%;
-}
-.butterfly
-{
-    border-radius: 5px;
-    width:100%;
-    height:400px;
-}
-.Cobrapose
-{
-    display:block;
-    padding:2%;
-}
-.cobra
-{
-    border-radius: 5px;
-    width:100%;
-    height:400px;
-}
-.childpose
-{
-    display:block;
-    padding: 2%;
-}
-.child
-{
-    border-radius: 5px;
-    width:100%;
-    height:400px;
-}
-.login_page
-{
-    display:flex;
-    height:200px;
-    width:200px;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(241,173,22);
-    flex-direction: column;
-    padding:10px;
-    border:solid red 2px;
-}
-input{
-    margin:10px;
-    padding:5px;
-
-}
-.login-body
-{
-    background-image: url(https://imgs.search.brave.com/5SFntueVoqyVjcyfuU-zo8FeulCj8rwBNpNI72operw/rs:fit:759:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC4w/UWZhdngzMHBIS1ot/dW96N05LQmZBSGFF/byZwaWQ9QXBp);
-    background-repeat: no-repeat;
-    background-position: cover;
-    height:500px;
-    width:auto;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    background-clip: content-box;
-    background-size: 1400px 500px;
-
-}
-.signup_body
-{
-    background-image: url(https://imgs.search.brave.com/Ns9WKegMeZNKZ9DQ6NX8PqkkrDBUoLOryyI8XVxjKQc/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9jZG4u/aGlwd2FsbHBhcGVy/LmNvbS9pLzcxLzEy/L0pjZDZWbi5qcGc);
-    background-repeat: no-repeat;
-    background-position: cover;
-    background-clip: content-box;
-    background-size: 1500px 800px;
-}
-
-.signup_page
-{
-    background-color: rgb(241,171,22);
-    display:flex;
-    flex-direction: column;
-    padding:10px;
-    border:solid red 2px;
-    width:300px;
-}
-.signup_logo
-{
-    position:static;
-    margin-block-start: auto;
-    height:80px;
-}
-.signup_page_align
-{
-    display:flex;
-    justify-content: flex-end;
 }

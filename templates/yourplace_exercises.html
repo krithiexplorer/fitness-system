@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+{% static "images" as baseUrl %}
+{% block content %}
+<section>
+    <div class="vh-100 d-flex flex-column justify-content-center align-items-center" id="exercises">
+        <h1><strong> One, Two, Three, Four </strong></h1>
+        <h6> <em>¨The only person you are destined to become is the person you decide to be.¨ – Ralph Waldo Emerson</em></h6>
+    </div>
+</section>
+<div class="d-flex">
+    {% for dest in dests %}
+
+    <div class='card_modify shadow col-xs-12 col-sm-6 col-md-4 text-center'>
+        <div class=' mt-4 m-2 p-2 pb-5 w-70 text-black'>
+            <h3 class='text-black'> Padmasana </h3>
+            <img class="img1" src="{{baseUrl}}/{{dest.jpg}}" alt="imagedisplayed">
+        </div>
+        <div style="padding:10px;">
+            <a href='details.html'>   
+                <button class='btn btn-primary text-white mt-2'>View More</button>
+            </a>    
+        </div>
+        </div>
+    </div>
+
+    {% endfor %}
+</div>
+{% endblock %}

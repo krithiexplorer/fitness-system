@@ -7,29 +7,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Your Place</title>
     <link rel="stylesheet" href="{% static 'css/yourplace.css' %}">
-    <!--<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">-->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'js/bootstrap-icons.json' %}">
+    <style>
+        .img1
+        {
+            width:300px;
+            height:300px;
+        }
+        h6{
+            color:darkgoldenrod;
+        }
+        .card_modify
+        {
+            width:400px;
+            height:auto;
+        }
+        #mindful_1
+        {
+            background-image: url("http://www.trayanaturalhealth.com/wp-content/uploads/2018/01/yoga.jpeg");
+            background-position: cover;
+            background-repeat: no-repeat;
+            background-size:1400px 1000px;
+            
+        }
+        #home
+        {
+            background-image: url("https://www.washingtonpost.com/resizer/4tC8vQjBZXj3AT1GBaXi3AbFPGQ=/1484x0/arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/7VGD6HYYOVFNRLAQ3P2KQXZ2QQ.jpg");
+            background-position: cover;
+            background-repeat: no-repeat;
+            background-size:1400px 1000px;
+            
+        }
+        #exercises
+        {
+            background-image: url("https://static.sportzbusiness.com/uploads/2020/07/Aerobic-Exercise.jpg");
+            background-position: cover;
+            background-repeat: no-repeat;
+            background-size:1400px 1000px;
+            
+        }
+        #recipes
+        {
+            background-image: url("https://images.creativemarket.com/0.1.0/ps/1284923/1360/906/m1/fpnw/wm1/jkqdp16z2jmoen2sx9yy1hjiaxmjjm96tvlnymyadqphd2aw6akvks5rsgc3ekjh-.jpg?1463606365&s=a5b6ca125d01b9f7f46a9eecb31c02aa");
+            background-position: cover;
+            background-repeat: no-repeat;
+            background-size:1400px 1000px;
+            
+        }
+        
+        
+    </style>
 </head>
 <body>
-    <div class="container1">
-        <div>
-            <img class="logo" src="{% static 'images/yourplace.jpg' %}">
-        </div>
-        <div id="para_cont1">
-            <p>Because you are important!!</p>
-        </div>
-        <div id="login_signup">
-            <button class="btn btn-success">Login</button>
-            <button class="btn btn-primary">Sign up</button>
-        </div>
-    </div>
-    <div class="container2">
-        <button id="b1">Home </button>
-        <button id="b2">Exercises </button>
-        <button id="b3">Mindfullness </button>
-        <button id="b4">Recipes </button>
-        <button id="b5">Games </button>
-        <button id="b6">About us</button>
-    </div>
+    <div class="header sticky-top bg-white">
+        <nav class="navbar navbar-expand-md" style="display:flex;">
+          <a href="your_place.html">
+            <img style="width:150px;height:50px;" src="{% static 'images/yourplace.jpg' %}">
+          </a>
+            <div class="d-flex justify-content-end w-100">
+                <div style="display:flex;">
+                    <a class="nav-link" href='/'>
+                            Home
+                    </a>
+                    <a class="nav-link" href="/mindfullness">
+                            Mindfulness
+                    </a>
+                    <a class="nav-link" href="/exercises">
+                            Exercises
+                    </a>
+                    <a class="nav-link" href="/recipes">
+                            Recipes
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse justify-content-end" id="my-navbar">
+                <ul class="navbar-nav">
+                      <li class="nav-item">
+                          <a class="nav-link" href="/signup">
+                              Signup
+                          </a>
+                      </li>
+                    <div class="nav-vl"></div>
+                    <li class="nav-item">
+                         <a class="nav-link" href="/login">
+                              Login
+                        </a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+      </div>
+    
 
         {% block content %}
 

@@ -1,58 +1,41 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup | Your Place</title>
-    <link rel="stylesheet" href="css/yourplace.css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
 </head>
-<body class="signup_body">
-    <!--
-    <div class="container1">
-    -->
-    <img class="signup_logo" src="img/yourplace.jpg">
-        <!--
-        <div id="para_cont1">
-            <p>Because you are important!!</p>
+<body>
+    <div class="d-flex vh-100">
+        <div class="container w-50 h-auto d-flex justify-content-center align-items-center">
+            <img style="height:100%;width:100%" src="{% static 'images/singup_wp.jpg' %}">
         </div>
-        <div id="login_signup">
-            <button class="signup">Sign up</button>
+        <div class="container w-50 h-auto d-flex justify-content-center align-items-center text-black" style="background-color:rgb(182,255,108)">
+           
+            <div style="padding:20px 50px 20px;border-radius:20px 50px 20px;background-color:whitesmoke;box-shadow:10px 10px 5px;">
+                <div class="d-flex justify-content-center">
+                    <h4><em>Get started</em></h4>
+                </div>
+                <form action="pwsignup.php" method="post" enctype="multipart/form-data">
+                    <input class="form-control mt-2" type="text" name="name" placeholder="Enter Name">
+                    <input class="form-control mt-2" type="text" name="email" placeholder="Enter Email">
+                    <input class="form-control mt-2" type="password" name="password" placeholder="Enter Password">
+                    <input class="form-control mt-2" type="password" name="password" placeholder="Confirm Password">
+            
+                    <div style="display:flex;justify-content:space-between;">
+                        <input class="btn btn-success mt-4" type="submit">
+                        <input class="btn btn-success mt-4" type="reset">
+                    </div>
+                </form>
+            </div>
+            
         </div>
     </div>
-    <div class="container2">
-        <button id="b2">Exercises </button>
-        <button id="b3">Mindfullness </button>
-        <button id="b4">Recipes </button>
-        <button id="b5">Games </button>
-        <button id="b6">About us</button>
-    </div>
--->
-    <div class="signup_page_align">
-        <form method="get" action="yourplace_signup.php" class="signup_page">
-            <h2 style="font-family:cursive;color:red;text-align: center;">Signup as a new user:</h2>
-            <input type="text" placeholder="Enter username" name="username">
-            <input type="password" placeholder="Enter password" name="password">
-            <input type="text" placeholder="Enter Email" name="email">
-            <input type="number" placeholder="Enter Age" name="age">
-
-            <input style="background-color:green;" type="Submit">
-        </form>
-    </div>
-    <div style="background-color:black; padding:10px;margin-top: 70px;display:flex;justify-content: space-evenly;">
-        <div style="display:inline">
-            <h2 style="color:white;">Follow us:</h2>
-            <img class="insta" src="img/instagram_logo.jpg">
-            <img class="facebook" src="img/facebook_logo.jpg">
-        </div>
-        <i class="fa-regular fa-copyright"></i>
-        <p><i class="fa-regular fa-copyright"></i>Copyright-Your Place</p>
-        <p>Goodness in mind and heart</p>
+    <div>
+        <h6>Copyright - YourPlace.com</h6>
     </div>
 </body>
 </html>

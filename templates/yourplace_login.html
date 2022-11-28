@@ -1,41 +1,36 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login | Your Place</title>
-    <link rel="stylesheet" href="css/yourplace.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
 </head>
 <body>
-    <div class="container1">
-        <div>
-            <img class="logo" src="img/yourplace.jpg">
+    <div class="d-flex vh-100">
+        <div class="container w-50 h-auto d-flex justify-content-center align-items-center">
+            <img style="height:100%;width:100%" src="{% static 'images/login_wp.jpg' %}">
         </div>
-        <div id="para_cont1">
-            <p>Because you are important!!</p>
-        </div>
-        <div id="login_signup">
-            <button class="signup">Sign up</button>
+        <div class="container w-50 h-auto d-flex justify-content-center align-items-center text-black" style="background-color:rgb(0,0,15);">
+            <div style="padding:20px 50px 20px;border-radius:20px 50px 20px;background-color:whitesmoke;box-shadow:10px 10px 5px;">
+                <div class="d-flex justify-content-center">
+                    <h4 class="d-flex justify-content-center"><em>Login</em></h4>
+                </div>
+                <form method="post">
+                    <input class="form-control mt-2" type="text" name="name" placeholder="Enter Name">
+                    <input class="form-control mt-2" type="text" name="email" placeholder="Enter Email">
+                    <input class="form-control mt-2" type="password" name="password" placeholder="Enter Password">
+               
+                    <div style="display:flex;justify-content:space-between;">
+                        <input class="btn btn-success mt-4" type="submit">
+                        <input class="btn btn-success mt-4" type="reset">
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
-    <div class="container2">
-        <button id="b2">Exercises </button>
-        <button id="b3">Mindfullness </button>
-        <button id="b4">Recipes </button>
-        <button id="b5">Games </button>
-        <button id="b6">About us</button>
     </div>
-    <div class="login-body">
-        <form class="login_page">
-            <h2 style="font-family:cursive;color:red;">User Login</h2>
-            <input type="text" placeholder="Enter username">
-            <input type="password" placeholder="Enter password">
-            <input type="Submit">
-        </form>
-    </div>
-    <script>
-        document.write("User Experience - yourplace");
-    </script>
 </body>
 </html>

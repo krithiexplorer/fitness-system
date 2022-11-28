@@ -2,21 +2,67 @@
 {% load static %}
 <body>
     {% block content %}
-    <div class="container3">
-        <div>
-            <img class="mindfulness" src="{% static 'images/mindfulness.jpg' %}">
+    <section>
+        <div class="vh-100 d-flex flex-column justify-content-center align-items-center" id="home">
+            <h1><strong>Introducing Yourplace</strong></h1>
+            <h6><em>Your perfect companion to learn exercises and to track your progress</em></h6>
         </div>
+    </section>
+    <section>
         <div>
-            <p class="content">Self love and self care is what we ignore the most today in our hectic daily life. Statistics says among 60% of today's youth are suffering from depression,due to lack of self care. we sincerely believe that this website might change the life of any individual who is reading this.</p>
+            <div class="d-flex justify-content-center" style="padding-top:50px;">
+                <h1>Why to choose Yourplace?</h1>
+            </div>
+            <div style="margin:100px;padding:80px;border:2px solid yellow;border-radius: 20px 80px 20px;background-color:lightgoldenrodyellow;">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 icon-box">
+                        <div>
+                            <img src="{% static 'images/heart-pulse-fill.svg' %}">
+                        </div>
+                        <div class="d-flex">
+                            <h4>Learn great exercises</h4>
+                            <h6>Guides beginners to learn exercises easily.<h6>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 icon-box">
+                        <div>
+                            <img src="{% static 'images/heart-fill.svg' %}">
+                        </div>
+                        <div class="d-flex">
+                            <h4>Learn Healthy Lifestyle</h4>
+                            <h6>Suggests users with several poses to keep their health on track.</h6>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 icon-box">
+                        <div>
+                            <img src="{% static 'images/bag-heart-fill.svg' %}">
+                        </div>
+                        <div class="d-flex">
+                            <h4>Healthy Food Suggestion</h4>
+                            <h6>Suggests what to eat and how to eat.</h6>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 icon-box">
+                        <div>
+                            <img src="{% static 'images/clipboard-data-fill.svg' %}">
+                        </div>
+                        <div class="d-flex">
+                            <h4>Track Your Progress</h4>
+                            <h6>Users can easily track their health by giving their weight and calorie count.</h6>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
         </div>
-    </div>
-    <div class="container4">
-        <p class="con4_1">All we want to convey you is, you are not alone!Join the revolution in defeating depression and leading a peaceful life. Become a part of us and practice the activities we post to lead a healthy and happy life.</p>
-        <h3 class="con4_2" >Because you are important!!</h3>
-    </div>
+    </section>
+
     <div class="new_con1">
-        <h1>Today's Thought:</h1>
-        <p id="para">You are the sun in someone's sky!! just they're shy to tell you. Feel the little things around you today.We are eager to meet you again, come sooner!!</p>
+        <div style="padding:50px;">
+            <h1>Today's Thought:</h1>
+            <p id="para">You are the sun in someone's sky!! just they're shy to tell you. Feel the little things around you today.We are eager to meet you again, come sooner!!</p>
+        </div>
     </div>
     {% endblock %}
 </body>

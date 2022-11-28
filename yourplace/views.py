@@ -7,3 +7,15 @@ def home(request):
 
 def mindfullness(request):
     return render(request,'yourplace_mindfullness.html')    
+
+def login(request):
+    return render(request,'yourplace_login.html')
+
+def signup(request):
+    return render(request,'yourplace_signup.html')
+
+def recipes(request):
+    return render(request,'yourplace_recipes.html')
+
+def exercises(request):
+    return render(request,'yourplace_exercises.html')

@@ -1,36 +1,47 @@
 {% extends 'base.html' %}
 {% load static %}
 {% static "images" as baseUrl %}
+
 <body>
     {% block content %}
-    <div id="mindful_1" class="vh-100 d-flex flex-column">
-        <h1 class="mindful_1_head"><strong>Feed the inner you with these calming exercises!!</strong></h1>
-    </div>
+    <section>
+        <div id="mindful_1" class="vh-100 d-flex flex-column">
+            <h1 class="mindful_1_head"><strong>Feed the inner you with these calming exercises!!</strong></h1>
+        </div>
+    </section>
     <div style="padding:100px;text-align:center;">
         <h2>Scroll down to learn several poses</h2>
     </div>
+    {% for stretch in stretches %}
     <div class="d-flex">
-        {% for dest in dests %}
-
-        <div class='card_modify shadow col-xs-12 col-sm-6 col-md-4 text-center'>
-            <div class=' mt-4 m-2 p-2 pb-5 w-70 text-black'>
-                <h3 class='text-black'> Padmasana </h3>
-                <img class="img1" src="{{baseUrl}}/{{dest.jpg}}" alt="imagedisplayed">
+        <div class='card_modify text-center'>
+            <div class=' mt-4 m-2 p-2 pb-5 w-70'>
+                <h3 class='text-dark'> {{stretch.yoganame}} </h3>
             </div>
-            <div style="padding:10px;">
-                <a href='details.html'>   
-                    <button class='btn btn-primary text-white mt-2'>View More</button>
-                </a>    
-            </div>
+            <div class="d-flex">
+                <div class="container w-50 h-auto d-flex justify-content-center align-items-center">
+                    <img class="img1" src="{{stretch.yogaimg.url}}" alt="imagedisplayed">
+                </div>
+                <div class="container w-50 h-auto d-flex justify-content-center">
+                    <div class="d-block">
+                        <h4>How to do: </h4>
+                        <p>{{stretch.yogasteps}}</p>
+                        <h4>Benefits: </h4>
+                        <p>{{stretch.yogadetails}}</p>
+                        <h6 class="text-dark">Exercise Time: {{stretch.yoganoOfmins}} mins</h6>
+                    </div>
+                </div>
             </div>
         </div>
-
-        {% endfor %}
     </div>
+
+    {% endfor %}
     <div class="text_container">
-        <p style="padding-left:10px">As a beginner,follow these exercises as per the guidance provided. These exercises are well known to reduce stress, stretch vital body muscles and revitalize your lost strength.</p>
+        <p style="padding-left:10px">As a beginner,follow these exercises as per the guidance provided. These exercises
+            are well known to reduce stress, stretch vital body muscles and revitalize your lost strength.</p>
         <h2 style="text-align:center">Remember, consistency is the key..understood kids hehehe!!!</h2>
     </div>
     {% endblock %}
 </body>
+
 </html>

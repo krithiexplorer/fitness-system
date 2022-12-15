@@ -8,22 +8,27 @@
         <h6><em>View suggested recipes inorder to gain maximum nutrition and maintain good health</em></h6>
     </div>
 </section>
-<div class="d-flex">
-    {% for dest in dests %}
-
-    <div class='card_modify shadow col-xs-12 col-sm-6 col-md-4 text-center'>
-        <div class=' mt-4 m-2 p-2 pb-5 w-70 text-black'>
-            <h3 class='text-black'> Padmasana </h3>
-            <img class="img1" src="{{baseUrl}}/{{dest.jpg}}" alt="imagedisplayed">
-        </div>
-        <div style="padding:10px;">
-            <a href='details.html'>   
-                <button class='btn btn-primary text-white mt-2'>View More</button>
-            </a>    
-        </div>
+    {% for recipecount in recipe %}
+    <div class="d-flex">
+        <div class='card_modify text-center'>
+            <div class=' mt-4 m-2 p-2 pb-5 w-70'>
+                <h3 class='text-dark'> {{recipecount.recipename}} </h3>
+            </div>
+            <div class="d-flex">
+                <div class="container w-50 h-auto d-flex justify-content-center align-items-center">
+                    <img class="img1" src="{{recipecount.recipeimg.url}}" alt="imagedisplayed">
+                </div>
+                <div class="container w-50 h-auto d-flex justify-content-center">
+                    <div class="d-block">
+                        <h4>How to do: </h4>
+                        <p>{{recipecount.recipesteps}}</p>
+                        <h4>Ingredients: </h4>
+                        <p>{{recipecount.recipedetails}}</p>
+                        <h6 class="text-dark">Cooking Time: {{recipecount.recipesnoOfmins}} mins</h6>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-
     {% endfor %}
-</div>
 {% endblock %}

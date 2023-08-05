@@ -139,7 +139,7 @@
         <div class="shape"></div>
         <div class="shape"></div>
     </div>
-    <form>
+    <form action="signup/" method ="post">
         <h3>Signup to Yourplace</h3>
         {% csrf_token %}
                     <input type="text" name="first_name" placeholder="Enter First Name">
@@ -152,7 +152,6 @@
                         <h6 class="text-danger">{{message}}</h6>
                     {% endfor %}
                     <input type="submit" class="btn btn-primary">
-        
     </form>
 </body>
 
